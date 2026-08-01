@@ -1,4 +1,4 @@
-# Language Detection
+# Language-Detection
 # 🧠 AI-Generated Text Detection using Deep Learning
 
 > Detecting AI-generated text using a **1D Convolutional Neural Network (CNN)**.
@@ -132,7 +132,7 @@ The final model achieved the best validation performance while maintaining excel
 # 📂 Repository Structure
 
 ```text
-Language Detection/
+Language-Detection/
 │
 ├── README.md
 ├── Report/
