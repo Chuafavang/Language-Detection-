@@ -3,11 +3,6 @@
 
 > Detecting AI-generated text using **RoBERTa embeddings** and a **1D Convolutional Neural Network (CNN)**.
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
-![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-
 ---
 
 ## 📌 Overview
@@ -36,9 +31,7 @@ The project demonstrates the complete machine learning workflow including data e
 # 🏗 Project Workflow
 
 ```text
-Raw Text
-     │
-RoBERTa Embeddings
+Embedded sentence-level data
      │
 Sentence-level CNN
      │
@@ -52,30 +45,52 @@ Final Paragraph Prediction
 ---
 
 # 🧠 Model Architecture
-
 ```text
 Input (100 × 768)
 
         │
-Conv1D (128 filters)
+        ▼
+Conv1D (128, k=3, ReLU)
 
         │
-Conv1D (256 filters)
+        ▼
+MaxPooling1D (pool=2)
 
         │
-Conv1D (128 filters)
+        ▼
+Dropout (0.2)
 
         │
-Max Pooling
+        ▼
+Conv1D (256, k=3, ReLU)
 
         │
-Dropout
+        ▼
+MaxPooling1D (pool=2)
 
         │
-Dense Layer
+        ▼
+Dropout (0.2)
 
         │
-Sigmoid Output
+        ▼
+Conv1D (128, k=3, ReLU)
+
+        │
+        ▼
+Flatten
+
+        │
+        ▼
+Dropout (0.3)
+
+        │
+        ▼
+Dense (1, Sigmoid)
+
+        │
+        ▼
+Prediction
 ```
 
 The final architecture was selected after extensive experimentation with different:
@@ -124,17 +139,12 @@ AI-Generated-Text-Detection/
 │   └── Report.pdf
 │
 ├── SRC/
-│   ├── train.py
-│   ├── predict.py
-│   ├── evaluate.py
-│   ├── preprocessing.py
-│   └── ...
 │
-├── requirements.txt
+├── data/
+│
+├── results/
 └── LICENSE
 ```
-
-*(Update the filenames if your project structure differs.)*
 
 ---
 
