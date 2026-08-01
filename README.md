@@ -140,9 +140,9 @@ Language-Detection/
 │
 ├── SRC/
 │
-├── data/
+├── Data/
 │
-├── results/
+├── Results/
 └── LICENSE
 ```
 
