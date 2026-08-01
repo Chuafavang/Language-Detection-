@@ -1,7 +1,7 @@
 # Language-Detection
 # 🧠 AI-Generated Text Detection using Deep Learning
 
-> Detecting AI-generated text using **RoBERTa embeddings** and a **1D Convolutional Neural Network (CNN)**.
+> Detecting AI-generated text using a **1D Convolutional Neural Network (CNN)**.
 
 ---
 
