@@ -143,7 +143,7 @@ Language-Detection/
 ├── Data/
 │
 ├── Results/
-└── LICENSE
+
 ```
 
 ---
