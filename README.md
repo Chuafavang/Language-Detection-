@@ -140,12 +140,12 @@ Language-Detection/
 │
 ├── SRC/
 │
-├── Data/
+├── Data/  # Not included in this repository
 │
 └── Results/
 
 ```
-
+> **Note:** The `Data/` directory is excluded from this repository because the processed `.npy` files exceed GitHub's file size limits. If you require the data for academic or research purposes, please contact the author.
 ---
 
 # 📈 Future Improvements
